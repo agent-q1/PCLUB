@@ -10,5 +10,7 @@ Also ensure you have python 2.7 or higher installed.
 
 # RUN
 Clone the repository and switch to it in the terminal.
-Run python scraping.py and then python scraping2.py from the terminal once inside the directory.
+Run python scraping.py and then python scraping2.py from the terminal.
+scraping.py creates an output.csv file.
+scraping2.py then uses the same csv file and students.json to run some validation tests.
 
