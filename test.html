@@ -1,0 +1,2789 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app="app" ng-controller="AppController as appCtrl" ng-csp ga-analytics-id="UA-53341410-6" ga-analytics-send-pageview>
+	<head>
+		<title>Projects - 2019 - Google Summer of Code Archive</title>
+		<meta name="google-site-verification" content="zyiCfocOWgOl49GWIo6fZq6DuQ8o-0eXvz1MQP1o5a0" />
+		<meta name="description" content="Google Summer of Code 2019 list of projects" />
+
+		
+			<meta property="og:title" content="Projects - 2019 - Google Summer of Code Archive" />
+			<meta property="og:description" content="Google Summer of Code 2019 list of projects" />
+			<meta property="og:type" content="website" />
+			<meta property="og:url" content="https://summerofcode.withgoogle.com" />
+			<meta property="og:image" content="https://summerofcode.withgoogle.com/static/img/og-image.png" />
+		
+
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Product+Sans:400|Roboto:700,500,400,300,100" rel="stylesheet">
+
+<link rel="stylesheet" href="/static/archive/css/029360566148655ee9cd0b68968e7de7f433458b.soc-archive.css">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="msapplication-TileColor" content="#9a1aaf">
+		<meta name="msapplication-TileImage" content="/static/favicon/mstile-144x144.png">
+		<meta name="msapplication-config" content="/static/favicon/browserconfig.xml" />
+
+		<link rel="manifest" href="/static/favicon/manifest.json">
+		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/static/favicon/apple-touch-icon-57x57.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/static/favicon/apple-touch-icon-60x60.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/static/favicon/apple-touch-icon-72x72.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/static/favicon/apple-touch-icon-76x76.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/static/favicon/apple-touch-icon-114x114.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/static/favicon/apple-touch-icon-120x120.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/static/favicon/apple-touch-icon-144x144.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/static/favicon/apple-touch-icon-152x152.png" />
+		<link rel="mask-icon" href="/static/favicon/safari-pinned-tab.svg" color="#9a1aaf">
+		<link rel="icon" type="image/png" href="/static/favicon/favicon-16x16.png" sizes="16x16" />
+		<link rel="icon" type="image/png" href="/static/favicon/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="/static/favicon/favicon-96x96.png" sizes="96x96" />
+		<base href="/">
+	</head>
+	<body md-theme="soc" class=" page-projects-list" ng-cloak 
+data-redirect-url-template="/projects/999"
+data-redirect-url-placeholder="999"
+>
+		<header class="app-header">
+			<md-toolbar class="app-header__main md-menu-toolbar" layout layout-align="start center">
+				<div class="fixed-outer-width" layout layout-align="space-between center">
+					<a class="brand header-column" layout layout-align="center center" href="/archive/">
+						<img class="brand__logo" src="/static/archive/img/soc-archive-logo.svg" alt="Google Summer of Code Archive">
+						<div layout="column">
+							<h1 class="brand__title"><span class="brand__google-title">Google</span> Summer of Code</h1>
+							<div class="brand__subtitle">Archive</div>
+						</div>
+					</a>
+					<div class="header-column" layout="row" layout-align="end center" flex>
+						
+						<form method="GET" action="/archive/search/" layout layout-align="end center" class="search-form" hide-xs role="search">
+							<md-input-container md-no-float>
+							<input
+								placeholder="Search for projects, organizations, or usernames"
+								type="text"
+								name="q"
+								value=""
+								value-from-query-param="q"
+							/>
+							</md-input-container>
+							<md-button type="submit">
+								<i class="material-icons">search</i>
+							</md-button>
+						</form>
+						<div class="header-menu--small" hide-gt-xs>
+							<md-button class="header-menu__hamburger" ng-click="appCtrl.toggleSideMenu()">
+								<i class="material-icons">menu</i>
+							</md-button>
+						</div>
+						
+					</div>
+				</div>
+			</md-toolbar>
+			
+				
+				<md-toolbar class="app-header__secondary md-menu-toolbar" hide-xs hide-sm>
+					<div class="fixed-outer-width">
+						<nav class="md-toolbar-tools">
+							<h2>2019</h2>
+							<ul class="no-style-list" layout>
+								<li>
+	<a class=""
+		href="/archive/2019/organizations/"
+	>Organizations</a>
+</li>
+<li>
+	<a class="active"
+		href="/archive/2019/projects/"
+	>Projects</a>
+</li>
+
+							</ul>
+						</nav>
+					</div>
+				</md-toolbar>
+				
+			
+			<div ng-show="$root.loading" class="app-header__progress">
+				<md-progress-linear md-mode="indeterminate"></md-progress-linear>
+			</div>
+		</header>
+		
+		<div class="app-banner" layout layout-align="start center" >
+			
+<div class="banner__wrapper">
+	<div class="banner__text fixed-width">
+		<h3 class="banner__title">2019 Projects</h3>
+	</div>
+</div>
+
+		</div>
+		
+		<main class="app-body lifted" autoscroll="false">
+			
+			
+<section class="lifted-section">
+	<div class="fixed-width">
+		<ul layout layout-wrap class="project-list-container no-style-list">
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="&quot;Future-Proofing&quot; Tedana">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-0">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/6245424317333504/">Monica Yao</a>
+			</h4>
+			<div>&quot;Future-Proofing&quot; Tedana</div>
+			
+			<div>Organization: INCF</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			For tedana to expand, more extensive test cases are needed. A new contributor could have introduced an unknown bug into the codebase, but without...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="16.4 Open Data for OpenWorm">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-1">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/6461725128261632/">Emily Thomas</a>
+			</h4>
+			<div>16.4 Open Data for OpenWorm</div>
+			
+			<div>Organization: INCF</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			OpenWorm is an attempt to build a biophysical simulation of the model organism C. elegans via assimilation of published data from a range of sources....
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="360° video filter">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-2">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/4513054174216192/">Eugene Lyapustin</a>
+			</h4>
+			<div>360° video filter</div>
+			
+			<div>Organization: FFmpeg</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			For the past several years 360° cameras have become far more accessible, and several video-sharing services enabled support for 360° videos (for...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="3D Traffic Sign Rendering in OSM2World">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-3">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/6484767678136320/">IASON MANOLOUDIS</a>
+			</h4>
+			<div>3D Traffic Sign Rendering in OSM2World</div>
+			
+			<div>Organization: OpenStreetMap</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			OSM2World is a converter that renders 3D models of the world, based on exported OpenStreetMap data. As the project is still under construction and...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="7 Years Later: On vector&lt;bool&gt; and optimized Standard Algorithms in libstdc++">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-0">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/4789587371622400/">ThePhD</a>
+			</h4>
+			<div>7 Years Later: On vector&lt;bool&gt; and optimized Standard Algorithms in libstdc++</div>
+			
+			<div>Organization: GNU Compiler Collection</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			With the coming revival of bit utilities paper for the C++ Standard and the potential of a new
+suite of bit utilities coming from a header 
+ [5], the...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="[BEAM-6611] A Python Sink for BigQuery with File Loads in Streaming">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-1">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/6754999034445824/">Tanay Tummalapalli</a>
+			</h4>
+			<div>[BEAM-6611] A Python Sink for BigQuery with File Loads in Streaming</div>
+			
+			<div>Organization: The Apache Software Foundation</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			This project aims to add support for File Loads method of inserting data into BigQuery for streaming pipelines. The PR - #7655 for [BEAM-6553] added...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="[digiKam] Project: Zoomable and Resizable Brush for Healing Clone Tool">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-2">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/4930226629378048/">Ahmed Fathy</a>
+			</h4>
+			<div>[digiKam] Project: Zoomable and Resizable Brush for Healing Clone Tool</div>
+			
+			<div>Organization: KDE Community</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			Due to uncleanness of the camera, sometimes dusty spots appear in the captured image. Those dusty spots can be fixed by cloning similar regions from...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="[GNU Wget] HTTP/2 Test Suite">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-3">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/5001862103695360/">Kumar Mallikarjuna</a>
+			</h4>
+			<div>[GNU Wget] HTTP/2 Test Suite</div>
+			
+			<div>Organization: The GNU Project</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			Adding HTTP/2 + TLS support to the test library and h2 specific tests.
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="[OODT-986] A React based new UI for OPSUI">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-0">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/5432463780741120/">Nadeeshan Gimhana</a>
+			</h4>
+			<div>[OODT-986] A React based new UI for OPSUI</div>
+			
+			<div>Organization: The Apache Software Foundation</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			At the present stage, Apache OODT provides a web app to monitor the status of each component and ingested files, metadata and workflows. This main...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="`matcher.js` library and `Leaflet.DistortableImage` overhaul">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-1">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/6738465708834816/">Pranshu Srivastava</a>
+			</h4>
+			<div>`matcher.js` library and `Leaflet.DistortableImage` overhaul</div>
+			
+			<div>Organization: Public Lab</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			This project is divided into two parts, namely, building a matcher.js library and revamping Public Lab&#39;s Leaflet.DistortableImage repository, a...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="A DIY Robot kit for educators">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-2">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/4803830624026624/">Christos Chronis</a>
+			</h4>
+			<div>A DIY Robot kit for educators</div>
+			
+			<div>Organization: Open Technologies Aliance - GFOSS</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			Hello, my name is Christos Chronis postgraduate student of Harokopio University of Athens in Informatics and Telematics department. I have a great...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="A language server for Dhall">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-3">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/5156860695412736/">Frederik Ramcke</a>
+			</h4>
+			<div>A language server for Dhall</div>
+			
+			<div>Organization: Haskell.Org</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			The aim of the proposed project is to improve support for the Dhall language in mainstream editors via the Language Server Protocol standard.
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="A Neural QA Model for DBpedia - Anand Panchbhai">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-0">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/5996621777600512/">Anand</a>
+			</h4>
+			<div>A Neural QA Model for DBpedia - Anand Panchbhai</div>
+			
+			<div>Organization: DBpedia</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			With booming amount of information being continuously added to the internet, organising the facts and serving this information to the users becomes a...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="A new framework in support of multiple MPI implementations">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-1">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/4809791166218240/">Jian Cao</a>
+			</h4>
+			<div>A new framework in support of multiple MPI implementations</div>
+			
+			<div>Organization: Gentoo Foundation</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			There are numerous MPI implementations in the Gentoo portage tree and far more in general, but most of them can&#39;t be installed together as is. The...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="A New Package for Empirical Asset Pricing Research, or EAPR">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-2">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/4973388769001472/">Gregory S Brownson</a>
+			</h4>
+			<div>A New Package for Empirical Asset Pricing Research, or EAPR</div>
+			
+			<div>Organization: R project for statistical computing</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			A major effort in empirical asset pricing research is the initial stage of gathering the data, cleaning and filtering it, and then formatting it in a...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="A Next Generation GUI for  Visualizing Big Gridded Data in Python">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-3">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/6544996893720576/">Harman Deep Singh</a>
+			</h4>
+			<div>A Next Generation GUI for  Visualizing Big Gridded Data in Python</div>
+			
+			<div>Organization: Earth Science Information Partners</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			This project aims to create a Graphical User Interface (GUI) for big gridded geospatial data visualization in the browser interface backed by the...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="A parameterized automata Library for VisualStates tool">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-0">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/4816984095588352/">sudo-panda</a>
+			</h4>
+			<div>A parameterized automata Library for VisualStates tool</div>
+			
+			<div>Organization: JdeRobot - Universidad Rey Juan Carlos</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			Improving VisualStates, a great tool for easily creating complex robot behaviour, by adding parameterisation to its automatas and an online automata...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="A Rails 6 package transition in Debian">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-1">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/6469485647626240/">Jongmin Kim</a>
+			</h4>
+			<div>A Rails 6 package transition in Debian</div>
+			
+			<div>Organization: Ruby</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			Upgrade the Rails to 6.0.0 and patch all 169 Debian packages that depend on the Rails to be compatible with Rails 6.0.0.
+Rails (Ruby on Rails) is one...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="A small proposal for global environmental monitoring with Image Sequencer">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-2">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/5704282815332352/">Margaret Norton</a>
+			</h4>
+			<div>A small proposal for global environmental monitoring with Image Sequencer</div>
+			
+			<div>Organization: Public Lab</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			The project will increase Image Sequencer capability while simultaneously demonstrating the ability to process satellite images. The general approach...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="A stronger foundation for interactive Haskell tooling">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-3">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/5212790246080512/">dxld</a>
+			</h4>
+			<div>A stronger foundation for interactive Haskell tooling</div>
+			
+			<div>Organization: Haskell.Org</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			Inevitably new and prospective Haskell users will attempt to obtain editor/IDE
+integration for Haskell but unfortunately they are much more likely to...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="A Wayland application proxy">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-0">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/6302692069081088/">mstoeckl</a>
+			</h4>
+			<div>A Wayland application proxy</div>
+			
+			<div>Organization: X.Org Foundation</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			To create a program which acts as a Wayland proxy (client + server pair), and which can forward Wayland protocol information and local shared-memory...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Accountability Classifier from Annotated Data">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-1">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/5222629395398656/">ajp</a>
+			</h4>
+			<div>Accountability Classifier from Annotated Data</div>
+			
+			<div>Organization: Red Hen Lab</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			The objective of this project is to automatically detect types of accountability in news articles when describing crimes such as shootings, using a...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Active Learning Environment In 3Dmol.js">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-2">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/4875385718702080/">Keshavan Seshadri</a>
+			</h4>
+			<div>Active Learning Environment In 3Dmol.js</div>
+			
+			<div>Organization: Open Chemistry</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			The 3D structures of protein and organic molecules are tough to understand since not all can visualize their structures in the mind. The project aims...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Active Learning for Guided Analytics">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-3">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/6478531117187072/">jguertl</a>
+			</h4>
+			<div>Active Learning for Guided Analytics</div>
+			
+			<div>Organization: KNIME</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			The goal of this project is to implement an interactive JavaScript view to enable “Active Learning” within KNIME Analytics Platform. While KNIME...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Activity Masking in rav1e">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-0">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/6231206633406464/">Shreevari SP</a>
+			</h4>
+			<div>Activity Masking in rav1e</div>
+			
+			<div>Organization: Mozilla</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			Adaptive Quantization based on an activity mask.
+The human eye is more tolerant towards errors in areas of high activity and is quick to find out...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Actor support on Ignition">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-1">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/5112531666862080/">Alex Mingfei Sun</a>
+			</h4>
+			<div>Actor support on Ignition</div>
+			
+			<div>Organization: Open Source Robotics Foundation</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			This project is about migrating skeleton animation, i.e. actors, so they can be loaded into Ignition Gazebo. The work will involve making sure that...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Adapting TriforceAFL for NetBSD kernel fuzzing">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-2">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/5878693921030144/">Akul Abhilash Pillai</a>
+			</h4>
+			<div>Adapting TriforceAFL for NetBSD kernel fuzzing</div>
+			
+			<div>Organization: The NetBSD Foundation</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			To adapt the TriforceAFL kernel syscall fuzzer to effectively catch and report issues in the NetBSD kernel for amd64. TriforceAFL is a modified...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Add blockchain and hyperledger support for the ‘Journal of Open Data Publications’">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-3">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/5147590344048640/">Pradyumna Bang</a>
+			</h4>
+			<div>Add blockchain and hyperledger support for the ‘Journal of Open Data Publications’</div>
+			
+			<div>Organization: Open Bioinformatics Foundation</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			Open science is a movement that promotes open access to research data, publications, and scientific collaboration. It promises to increase...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Add Cross-DB JSONField">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-0">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/6436908320686080/">Sage Muhammad Abdullah</a>
+			</h4>
+			<div>Add Cross-DB JSONField</div>
+			
+			<div>Organization: Django Software Foundation</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			Django currently has limited support for JSONField. The support is provided in contrib.postgres.fields module, meaning it can only be used for...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Add Driver Support for AD5940 in the IIO Subsystem">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-1">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/5160712073117696/">Song Qiang</a>
+			</h4>
+			<div>Add Driver Support for AD5940 in the IIO Subsystem</div>
+			
+			<div>Organization: The Linux Foundation</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			Writing the driver of AD5940 in the IIO subsystem and add support for manipulating ADC channels, DAC channels, internal temperature sensor and GPIO...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Add Framebuffer driver for Beaglebone Black">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-2">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/5562703563718656/">Vijay Kumar Banerjee</a>
+			</h4>
+			<div>Add Framebuffer driver for Beaglebone Black</div>
+			
+			<div>Organization: RTEMS Project</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			This Project aims to improve the Beaglebone Black (BBB) Board Support Package on RTEMS. The project intends to add HDMI Framebuffer support for the...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Add functionality to store an unresolved merge-state">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-3">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/6568086956670976/">Navaneeth Suresh</a>
+			</h4>
+			<div>Add functionality to store an unresolved merge-state</div>
+			
+			<div>Organization: Python Software Foundation</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			Merge conflicts are part of every version control system structure. There can be situations in which some changes are necessary for a piece of...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Add KNF (NetBSD style) clang-format configuration">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-0">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/5564812057116672/">Manikishan Ghantasala</a>
+			</h4>
+			<div>Add KNF (NetBSD style) clang-format configuration</div>
+			
+			<div>Organization: The NetBSD Foundation</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			Add clang-format configuration ‘NetBSD’ reflecting  KNF (Kernel Normal Form) NetBSD style and upstream it to the LLVM project. Find and specify...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Add Multi-Wiki Support to WikiEduDashboard">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-1">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/5920429057769472/">Amit Joki</a>
+			</h4>
+			<div>Add Multi-Wiki Support to WikiEduDashboard</div>
+			
+			<div>Organization: Wikimedia Foundation</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			WikiEduDashboard is a versatile tool to engage in peer-learning through editing and reviewing the Wiki Articles. Currently, the tracking of articles...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Add new features on React Native client">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-2">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/6062335314100224/">Pranav Pandey</a>
+			</h4>
+			<div>Add new features on React Native client</div>
+			
+			<div>Organization: Rocket.Chat</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			Our React native implementation is relatively newer than its native counterparts hence lacks many of the important features and is more buggy.
+The...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Add New Machine Learning Models">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-3">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/5429236515471360/">Yash Lamba</a>
+			</h4>
+			<div>Add New Machine Learning Models</div>
+			
+			<div>Organization: Python Software Foundation</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			DFFML provides APIs for dataset generation and storage, and model definition using any machine learning framework, from high level down to low level...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Add new math.h and complex.h functions as built-ins.">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-0">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/6642860592463872/">Tejas Joshi</a>
+			</h4>
+			<div>Add new math.h and complex.h functions as built-ins.</div>
+			
+			<div>Organization: GNU Compiler Collection</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			GCC has support for built-in functions in C99/C11 standards along with features of IEEE standards. These functions do appropriate calculations...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Add Plugin Mechanism to the Dashboard">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-1">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/6552345297551360/">Ajat Prabha</a>
+			</h4>
+			<div>Add Plugin Mechanism to the Dashboard</div>
+			
+			<div>Organization: Cloud Native Computing Foundation (CNCF)</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			This project aims to introduce a plugin mechanism to the Kubernetes Dashboard. It shall deal with defining the plugin framework architecture, it’s...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Add returning to insert">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-2">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/5846287033827328/">Rucha Deodhar</a>
+			</h4>
+			<div>Add returning to insert</div>
+			
+			<div>Organization: MariaDB Foundation</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			Hello! 
+I am Rucha Deodhar. The task I&#39;ve picked is to add RETURNING clause to INSERT statement which will return the listed fields after the insert...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Add subsampling to aster models">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-3">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/6297056082132992/">Shannon Sequeira</a>
+			</h4>
+			<div>Add subsampling to aster models</div>
+			
+			<div>Organization: R project for statistical computing</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			We add support for sampling arrows to aster models using the theory of curved exponential families.
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Add support for additional delivery channels to Moira">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-0">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/6187065727778816/">Aswin M Prabhu</a>
+			</h4>
+			<div>Add support for additional delivery channels to Moira</div>
+			
+			<div>Organization: Moira</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			The aim of this project is to add support for additional delivery channels to Moira. A delivery channel is used to alert the user based on Graphite...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Add support for bounce processing in core">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-1">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/5383297545273344/">berserker1</a>
+			</h4>
+			<div>Add support for bounce processing in core</div>
+			
+			<div>Organization: GNU Mailman</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			This proposal’s main goal is to add a concrete and fully functional form of implementation/procedure for processing of various messages and taking...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Add Support for Custom Resource Definitions to the Dashboard">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-2">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/5962909421666304/">Elijah Oyekunle</a>
+			</h4>
+			<div>Add Support for Custom Resource Definitions to the Dashboard</div>
+			
+			<div>Organization: Cloud Native Computing Foundation (CNCF)</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			The Kubernetes dashboard previously supported Third Party Resources (TPR), but these were replaced in Kubernetes by Custom Resource Definitions...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Add Support for Extra Optimization Solvers to PortfolioAnalytics">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-3">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/5246812678520832/">Shawn Feng</a>
+			</h4>
+			<div>Add Support for Extra Optimization Solvers to PortfolioAnalytics</div>
+			
+			<div>Organization: R project for statistical computing</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			PortfolioAnalytics is a popular R package designed to provide optimized solution and visualizations for portfolio allocating problems with complex...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Add support for the OCI runtime spec by implementing a runc stage2">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-0">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/6333611203100672/">Alejandro Germain</a>
+			</h4>
+			<div>Add support for the OCI runtime spec by implementing a runc stage2</div>
+			
+			<div>Organization: Cloud Native Computing Foundation (CNCF)</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			rkt implements the App Container Executor specification of the appc Container Specification and uses systemd unit properties to implement its...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Add Support for WOFF2 Fonts to FreeType">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-1">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/6267232768753664/">Nikhil Ramakrishnan</a>
+			</h4>
+			<div>Add Support for WOFF2 Fonts to FreeType</div>
+			
+			<div>Organization: FreeType</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			The aim of this project is to integrate seamless support for the WOFF File Format 2.0 into FreeType so that these fonts can be recognized,...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Add Time-dependent Instrument Response Function to IRISpy">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-2">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/6094580905148416/">Kris Stern</a>
+			</h4>
+			<div>Add Time-dependent Instrument Response Function to IRISpy</div>
+			
+			<div>Organization: Open Astronomy</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			This project is about adding a very practical functionality to the IRISpy package which is built on top of Sunpy’s ndcube package. IRISpy provides...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Add traditional machine learning algorithms to the Swift TensorFlow library">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-3">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/5243175126433792/">Param Bhavsar</a>
+			</h4>
+			<div>Add traditional machine learning algorithms to the Swift TensorFlow library</div>
+			
+			<div>Organization: TensorFlow</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			This document describes the proposal to &quot;add traditional Machine Learning algorithms to the Swift TensorFlow library&quot;, for &quot;TensorFlow&quot; organization....
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Add Variant Graph (VG) support to BioD">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-0">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/5246044214919168/">Njagi Mwaniki</a>
+			</h4>
+			<div>Add Variant Graph (VG) support to BioD</div>
+			
+			<div>Organization: Open Bioinformatics Foundation</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			The current representation of reference genomes is as a sequence of nucleotides akin to a long string. Intuitively, this doesn’t represent a genome...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Add Windows Support for CVE-Binary-Tool">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-1">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/5362358724067328/">Ziao Wang</a>
+			</h4>
+			<div>Add Windows Support for CVE-Binary-Tool</div>
+			
+			<div>Organization: Python Software Foundation</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			CVE Binary Tool is running on Linux systems now by taking advantages of bash commands like file and string. Since file and string have already been...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Adding  PRU-ICSS drivers to RTEMS on Texas Instrument Sitara SoCs">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-2">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/6493866834788352/">NilsHoel</a>
+			</h4>
+			<div>Adding  PRU-ICSS drivers to RTEMS on Texas Instrument Sitara SoCs</div>
+			
+			<div>Organization: RTEMS Project</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			This Project intends to add the PRU support to RTEMS, using the Beaglebone Black (BBB). The BBB has an Texas Instruments AM3358 SoC with an ...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Adding (Updating) macOS support to Cuckoo SandBox">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-3">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/5575881328689152/">zed009</a>
+			</h4>
+			<div>Adding (Updating) macOS support to Cuckoo SandBox</div>
+			
+			<div>Organization: The Honeynet Project</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			Cuckoo Sandbox is a malware analysis platform which performs basic static file analysis to in-depth dynamic analysis of binaries. Even though macOS...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Adding and standardizing image processing operations in tf.image">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-0">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/6180250151550976/">whiterat</a>
+			</h4>
+			<div>Adding and standardizing image processing operations in tf.image</div>
+			
+			<div>Organization: TensorFlow</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			Project aims at updating existing functions to make them compatible with Tensorflow 2.0 and adding new image processing operations to make the...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Adding Augmented Reality (AR) support to the MapMint4ME Android Application">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-1">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/5962182162907136/">Aditya Vitthalrao</a>
+			</h4>
+			<div>Adding Augmented Reality (AR) support to the MapMint4ME Android Application</div>
+			
+			<div>Organization: OSGeo</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			MapMint4ME (MM4ME) is an android application allows user to take photos, record their positions, and view their current location on map based on...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Adding Autocomplete Function in RubyGems.org Search UI">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-2">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/5806675691307008/">Shunji Nishitani</a>
+			</h4>
+			<div>Adding Autocomplete Function in RubyGems.org Search UI</div>
+			
+			<div>Organization: Ruby</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			In RubyGems.org website, we can search for any kinds of gems you want. However, most programmers use google or any other websites to look for gems...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Adding Curiosity to TF-Agents">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-3">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/6082757464162304/">Ryan Lee</a>
+			</h4>
+			<div>Adding Curiosity to TF-Agents</div>
+			
+			<div>Organization: TensorFlow</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			Reinforcement learning is a class of machine learning methods that use the reward signal of the environment to infer optimal actions. Thus, easy...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Adding design policy and improving design">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-0">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/6190499470245888/">Amit Singh</a>
+			</h4>
+			<div>Adding design policy and improving design</div>
+			
+			<div>Organization: Boost C++</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			My goal is to implement design policy which will dictate how memory is accessed and how dimension is specified for example dynamic dimension or...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Adding Features to Subcircuits">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-1">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/4589246894047232/">Abdalla mohamed Abounar</a>
+			</h4>
+			<div>Adding Features to Subcircuits</div>
+			
+			<div>Organization: CircuitVerse.org</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			The CircuitVerse site provides simulation for digital design circuits on the web. For large-scale projects, users need to use some circuits inside of...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Adding Magick back-end support and iruby integration to Rubyplot.">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-2">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/6622714041729024/">Alish Dipani</a>
+			</h4>
+			<div>Adding Magick back-end support and iruby integration to Rubyplot.</div>
+			
+			<div>Organization: Ruby Science Foundation</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			Rubyplot only supports GR back-end, my project is to extend this support to Magick back-end, adding plot function to Rubyplot and integration with...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Adding missing features in nftables">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-3">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/5744305870733312/">ffmancera</a>
+			</h4>
+			<div>Adding missing features in nftables</div>
+			
+			<div>Organization: Netfilter project</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			I would like to work implementing missing features in nftables. My plan is to work on the following subtasks: extending stateful object...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Adding more options in Fabric8-Maven-Plugin for building images">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-0">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/6195613031464960/">Kartik Sapra</a>
+			</h4>
+			<div>Adding more options in Fabric8-Maven-Plugin for building images</div>
+			
+			<div>Organization: JBoss Community</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			The project aims to add more options to fabric maven plugin for building images for OpenShift build mode. Right now fmp supports two kinds of binary...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Adding multi-class classification to machine learning backend">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-1">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/5688027890843648/">Vlad Apetrei</a>
+			</h4>
+			<div>Adding multi-class classification to machine learning backend</div>
+			
+			<div>Organization: Moodle</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			Adding multi-class classification to the Moodle machine learning backend by exposing functionality derived from python Tensorflow and the phpml...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Adding new features and Improving DetectionSuite">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-2">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/6581241837518848/">sleep-404</a>
+			</h4>
+			<div>Adding new features and Improving DetectionSuite</div>
+			
+			<div>Organization: JdeRobot - Universidad Rey Juan Carlos</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			This project aims at introducing new features to detection suite like adjustable bounding boxes, ability to add new labels , draw bounding boxes...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Adding plotting engine into PerformanceAnalytics package">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-3">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/4936102194970624/">Ziheng Zhou</a>
+			</h4>
+			<div>Adding plotting engine into PerformanceAnalytics package</div>
+			
+			<div>Organization: R project for statistical computing</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			Adding plotting engine into PerformanceAnalytics package.
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Adding Privilege escalation functionality to the monkey">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-0">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/6062555213070336/">Dhayalan Balakrishnan</a>
+			</h4>
+			<div>Adding Privilege escalation functionality to the monkey</div>
+			
+			<div>Organization: The Honeynet Project</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			New non-destructive privilege escalation exploits likerunc container escape (CVE-2019-5736) and Dirty sock  (CVE-2019-7304) and Dirty cow  ...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Adding QEMU/AArch64 Support to Coreboot">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-1">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/4518359851335680/">Asami Doi</a>
+			</h4>
+			<div>Adding QEMU/AArch64 Support to Coreboot</div>
+			
+			<div>Organization: coreboot</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			We already have some physical mainboards for AArch64. However, we don’t have the support of QEMU/AArch64 yet. ARM-based chips nowadays become popular...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Adding SSR, CI/CD, Tests, Geohash, NSFW image classifier, and revamping Datastore and UX">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-2">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/5680088375361536/">Hitesh Kumar Rawat</a>
+			</h4>
+			<div>Adding SSR, CI/CD, Tests, Geohash, NSFW image classifier, and revamping Datastore and UX</div>
+			
+			<div>Organization: AOSSIE - Australian Open Source Software Innovation and Education</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			CrowdAlert practically addresses a really good problem we are trying build a solution for. It&#39;s solution boils down to having a robust and real-time...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Adding support for missing resources &amp; missing test coverage in Kubernetes-Client.">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-3">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/5069713124622336/">KunalKushwaha</a>
+			</h4>
+			<div>Adding support for missing resources &amp; missing test coverage in Kubernetes-Client.</div>
+			
+			<div>Organization: JBoss Community</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			Adding support in Kubernetes Client for several types of Resources:
+ ServiceCatalog 
+ TemplateInstance 
+ VolumeAttachment
+ CertificateSigningRequest
+...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Adding support for OpenType-SVG Fonts to FreeType">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-0">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/6002250785226752/">Moazin</a>
+			</h4>
+			<div>Adding support for OpenType-SVG Fonts to FreeType</div>
+			
+			<div>Organization: FreeType</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			To support colored glyphs in OpenType fonts, several formats currently exist, namely SBIX, CBDT and COLR. These are used widely with varying degree...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Adding traditional Machine Learning algorithms to Swift for Tensorflow">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-1">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/5508704416301056/">Victor Antony</a>
+			</h4>
+			<div>Adding traditional Machine Learning algorithms to Swift for Tensorflow</div>
+			
+			<div>Organization: TensorFlow</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			This project aims to add traditional machine learning algorithms to the Tensorflow for Swift library. We aim to implement Logistic Regression,...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Addition Of Baseline Models To Model Zoo">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-2">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/4542356773142528/">SHREYAS KOWSHIK</a>
+			</h4>
+			<div>Addition Of Baseline Models To Model Zoo</div>
+			
+			<div>Organization: The Julia Language</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			Model zoo is a great compilation of deep learning and reinforcement learning algorithms. Currently state of the art baselines in terms of...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Addition of novel CPTAC proteogenomic datasets to the cBioPortal">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-3">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/6341239065018368/">Lizabeth Katsnelson</a>
+			</h4>
+			<div>Addition of novel CPTAC proteogenomic datasets to the cBioPortal</div>
+			
+			<div>Organization: cBioPortal for Cancer Genomics</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			This project will aim to create a pipeline for all CPTAC data transformation into cBioPortal compatible files for public access. Conversion and...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Additional Format Support for the Python Libraries">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-0">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/5681972473495552/">Xavier Figueroa</a>
+			</h4>
+			<div>Additional Format Support for the Python Libraries</div>
+			
+			<div>Organization: SPDX (Software Product Data Exchange)</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			Due to its need to programmatically handle SPDX Documents, SPDX has developed Python tools that parse and write SPDX Documents in RDF and TAG/VALUE...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Advanced Kernel Density Estimation Improvements">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-1">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/6285626368851968/">Roberto Hueso Gomez</a>
+			</h4>
+			<div>Advanced Kernel Density Estimation Improvements</div>
+			
+			<div>Organization: mlpack</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			Kernel Density Estimation (KDE) is a widely used non-parametric technique to estimate a probability density function. mlpack already had an...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Advanced Node, Edge, Arrow Plugin Library">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-2">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/6396864058884096/">Caner Akdaş</a>
+			</h4>
+			<div>Advanced Node, Edge, Arrow Plugin Library</div>
+			
+			<div>Organization: Computational Biology @ University of Nebraska-Lincoln</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			Advanced Node, Edge, Arrow Plugin Library
+This plugin draws the desired types of nodes and arrows on a non-visible canvas. These dynamically drawn...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Advancement/Improvement of Settings Subsystem. (Zulip-Server)">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-3">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/4685569773273088/">PRAGATI AGRAWAL</a>
+			</h4>
+			<div>Advancement/Improvement of Settings Subsystem. (Zulip-Server)</div>
+			
+			<div>Organization: Zulip Open Source Project</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			Primarily, my main focus of summers would be whole settings subsystem. I will work on making it more robust and improving the quality of the code.
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Adversarial Examples for Natural Language Models">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-0">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/5085305600737280/">Panagiotis Lantavos</a>
+			</h4>
+			<div>Adversarial Examples for Natural Language Models</div>
+			
+			<div>Organization: CLiPS, University of Antwerp</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			Meaningful Adversarial Examples for Natural Language Models
+A project to create adversarial examples and resulting counterfactuals for text...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Agora">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-1">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/5888443278688256/">Angafor Brandon</a>
+			</h4>
+			<div>Agora</div>
+			
+			<div>Organization: AOSSIE - Australian Open Source Software Innovation and Education</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			Agora is a library of data structures and algorithm for counting votes in elections. It consist of over 40 algorithms along with testing frameworks....
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Agora Slack Application">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-2">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/5998631822295040/">Bomen Derick</a>
+			</h4>
+			<div>Agora Slack Application</div>
+			
+			<div>Organization: AOSSIE - Australian Open Source Software Innovation and Education</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			Agora Web is a platform for managing elections. It makes use of the Agora library which is used to count votes and provide election results. This...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Agora Vote Android Application- Mukul Kumar">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-3">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/6477088008175616/">Mukul Kumar</a>
+			</h4>
+			<div>Agora Vote Android Application- Mukul Kumar</div>
+			
+			<div>Organization: AOSSIE - Australian Open Source Software Innovation and Education</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			Agora vote is a voting platform where users can create elections and invite friends to cast their votes.
+It supports a wide range of voting...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Agora-web Proposal GSOC 2019">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-0">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/4648943768567808/">Chirag Singhal</a>
+			</h4>
+			<div>Agora-web Proposal GSOC 2019</div>
+			
+			<div>Organization: AOSSIE - Australian Open Source Software Innovation and Education</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			Agora is a library of data structures and algorithms for counting votes in elections. Agora-web, is a website to conduct online elections.The project...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="AI Face Recognition with OpenCV DNN module">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-1">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/5798435662331904/">Thanh Trung Dinh</a>
+			</h4>
+			<div>AI Face Recognition with OpenCV DNN module</div>
+			
+			<div>Organization: KDE Community</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			digiKam is KDE desktop application for photos management. In digiKam, tags on photos are strongly supported for the sake of providing users with a...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="AirMashup for Liquid Galaxy">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-2">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/5110650471186432/">Albert Morea</a>
+			</h4>
+			<div>AirMashup for Liquid Galaxy</div>
+			
+			<div>Organization: Liquid Galaxy project</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			AirMashup for Liquid Galaxy is a project that helps to comprehend how airspace is structured. Displaying in Liquid Galaxy airways, airports, flights...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="AirSim Simulator Support for Ardupilot SITL">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-3">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/4737458481135616/">Rajat Singhal</a>
+			</h4>
+			<div>AirSim Simulator Support for Ardupilot SITL</div>
+			
+			<div>Organization: Ardupilot.org</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			AirSim is an open-source, cross-platform simulator for drones and cars, built on Unreal 3D Engine. It provides physically and visually realistic...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Ajax based interface Cscout">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-0">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/5728066918154240/">Dimitrios Styliaras</a>
+			</h4>
+			<div>Ajax based interface Cscout</div>
+			
+			<div>Organization: Open Technologies Aliance - GFOSS</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			Create a modern dynamic interface for the CScout project
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Alert Redistribution System for Fink : an Apache Spark based Broker for Astronomy">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-1">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/5848657855774720/">Abhishek Chauhan</a>
+			</h4>
+			<div>Alert Redistribution System for Fink : an Apache Spark based Broker for Astronomy</div>
+			
+			<div>Organization: CERN-HSF</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			A huge volume of data is generated every night by large astronomical telescopes around the world. A robust and scalable software infrastructure is...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Alexa Skill for Rocket.Chat">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-2">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/6316883983204352/">Ashish Jha</a>
+			</h4>
+			<div>Alexa Skill for Rocket.Chat</div>
+			
+			<div>Organization: Rocket.Chat</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			Bring access of Rocket.Chat into the world of 100 million+ Alexa enabled devices. The project&#39;s aim is to create innovative, high valued user...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Allow the OpenCV&#39;s DNN module to work with GPUs">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-3">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/6169918255398912/">Yashas Samaga B L</a>
+			</h4>
+			<div>Allow the OpenCV&#39;s DNN module to work with GPUs</div>
+			
+			<div>Organization: OpenCV</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			The development of GPUs for general purpose computing has revolutionized the field of deep learning. They are critical for training large deep neural...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Amahi 12 Improvements">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-0">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/4517788570353664/">Sukhbir Singh</a>
+			</h4>
+			<div>Amahi 12 Improvements</div>
+			
+			<div>Organization: Amahi</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			In this project, my work will mainly focus on to develop new features for Amahi 12. Amahi is one of the best open-source media server software...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Amahi-Anywhere Improvements">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-1">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/5424074568761344/">Vishwas Mittal</a>
+			</h4>
+			<div>Amahi-Anywhere Improvements</div>
+			
+			<div>Organization: Amahi</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			Amahi-Anywhere file server is complete and working as of now, but there can be certain improvements that can be done to so as to improve both, the...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Amaya">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-2">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/6612863198691328/">Mikhaelle Bueno</a>
+			</h4>
+			<div>Amaya</div>
+			
+			<div>Organization: Catrobat</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			Amaya
+Inspired in the &quot;Awesome Demo Game Project &quot; idea
+Amaya is a princess that have his kingdom invade and now needs to defeat The Tyrant to...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="An ambitious step into mariadb developers society">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-3">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/5352537325043712/">Alexey Mogilyovkin</a>
+			</h4>
+			<div>An ambitious step into mariadb developers society</div>
+			
+			<div>Organization: MariaDB Foundation</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			Add support for Indexes on Expressions
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="An application for Céu-Arduino">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-0">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/5352631210344448/">Jingrui Li</a>
+			</h4>
+			<div>An application for Céu-Arduino</div>
+			
+			<div>Organization: LabLua</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			An application from Jingrui for Céu-Arduino, I&#39;ll do my best for that.
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="An Extended Version of “A Concise Handbook of TensorFlow” And A Library of Extended Keras Layers for TF 2.0">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-1">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/5460192307707904/">snowkylin</a>
+			</h4>
+			<div>An Extended Version of “A Concise Handbook of TensorFlow” And A Library of Extended Keras Layers for TF 2.0</div>
+			
+			<div>Organization: TensorFlow</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			Usability and 3rd cutting-edge models are two main factors that are especially concerned by academic area. This project concentrate on enhancing both...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="An Improved Graph Theory IDE">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-2">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/4668130863874048/">Caio Tonetti</a>
+			</h4>
+			<div>An Improved Graph Theory IDE</div>
+			
+			<div>Organization: KDE Community</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			As a student, I use graphs in almost everything related to my master’s research. Graph Theory is a great mathematical tool for programmers and...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="An R package for two new skew-t distributions">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-3">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/5955075401318400/">Daniel Xia</a>
+			</h4>
+			<div>An R package for two new skew-t distributions</div>
+			
+			<div>Organization: R project for statistical computing</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			We will develop an R package for two families of skew-t distributions that have different tail behavior for left and right tails, namely the family...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Analysis of WARP-V on FireSim with RocketChip">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-0">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/5427309819985920/">Alaa Salman</a>
+			</h4>
+			<div>Analysis of WARP-V on FireSim with RocketChip</div>
+			
+			<div>Organization: Free and Open Source Silicon Foundation</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			Analysis of the architectural performance of WARP-V using FireSim and RocketChip Chisel code. Adding WARP-V to RocketChip to utilize the capabilities...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Anaphora Resolution">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-1">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/5434868157120512/">Tanmai Khanna</a>
+			</h4>
+			<div>Anaphora Resolution</div>
+			
+			<div>Organization: Apertium</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			Anaphora resolution is the problem of resolving references to earlier items in the discourse. This most commonly appears as pronoun resolution where...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Android app improvement">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-2">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/4940146259001344/">dev-ritik</a>
+			</h4>
+			<div>Android app improvement</div>
+			
+			<div>Organization: Named Data Networking Project</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			NpChat is a photo and file sharing application built on Android and is inspired by Snapchat. It runs over the Named Data Network (NDN) and focuses on...
+		</div>
+	</md-card>
+</li>
+
+			
+				<li layout
+	flex-xs="100"
+	flex="50"
+	aria-label="Android App Improvements">
+	<md-card
+		action
+		class="archive-project-card archive-project-card"
+		flex
+	>
+		<div class="md-padding archive-project-card__header archive-project-card__header--mod-3">
+			<h4 class="archive-project-card__student-name">
+				<a action-link href="/archive/2019/projects/6203072802455552/">Balaji Ramavathu</a>
+			</h4>
+			<div>Android App Improvements</div>
+			
+			<div>Organization: Amahi</div>
+			
+		</div>
+		<div class="archive-project-card__content md-padding font-black-54" flex>
+			Amahi is a personal/Home server media software with the support of mobile apps and other devices that allow us to stream and access all types of...
+		</div>
+	</md-card>
+</li>
+
+			
+		</ul>
+		
+
+
+
+<div layout-padding layout="column" layout-gt-xs="row" class="paginator">
+	<div layout layout-align-xs="center center" layout-align-gt-xs="start center" layout-padding flex>
+		<span class="paginator__pages" layout-padding>Page <strong>1</strong> of 12</span>
+	</div>
+	<div layout layout-align-xs="center center" layout-align-gt-xs="end center" layout-padding flex>
+	
+	
+	<a class="md-soc-theme md-button md-primary md-raised" href="/archive/2019/projects/?page=2">Next</a>
+	
+	</div>
+</div>
+
+
+
+	</div>
+</section>
+
+		</main>
+		<footer class="app-footer">
+			<div layout="column" class="footer-wrapper wrapper-top">
+				<div layout="row" layout-align="end center" class="back-top-row fixed-outer-width">
+					<md-button class="back-to-top md-primary md-light md-normal-text" ng-click="appCtrl.scrollToTop()">Back to the top <i class="material-icons">keyboard_arrow_up</i></md-button>
+				</div>
+				<div layout="column" layout-gt-sm="row" layout-align="start start" class="links-row fixed-width">
+					<div class="links-container" layout-padding>
+						<div class="md-title">Learn</div>
+						<ul layout="column" class="no-style-list">
+							<li><a href="https://developers.google.com/open-source/gsoc/" target="_blank" aria-label="About Summer of Code">About</a></li>
+							<li><a href="https://developers.google.com/open-source/gsoc/faq" target="_blank">FAQs</a></li>
+							<li><a href="https://developers.google.com/open-source/gsoc/resources/" target="_blank">Resources</a></li>
+						</ul>
+					</div>
+					<div class="links-container" layout-padding>
+						<div class="md-title">Archive</div>
+						<ul layout="column" class="no-style-list">
+							
+							<li><a href="/archive/2019/" aria-label="2019 program">2019</a></li>
+							
+							<li><a href="/archive/2018/" aria-label="2018 program">2018</a></li>
+							
+							<li><a href="/archive/2017/" aria-label="2017 program">2017</a></li>
+							
+							<li><a href="/archive/2016/" aria-label="2016 program">2016</a></li>
+							
+							<li><a href="https://www.google-melange.com/archive/gsoc" target="_blank">Previous years</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-wrapper wrapper-bottom fixed-outer-width">
+				<div
+					layout="column"
+					layout-gt-sm="row"
+					layout-align="space-between center"
+				>
+					<ul layout="column" layout-gt-sm="row" layout-align="start center" class="logo-row no-style-list">
+						<li>
+							<a href="http://www.google.com" target="_blank" layout layout-align="start center">
+								<img class="google-logo"
+									alt="Google"
+									src="https://www.gstatic.com/images/branding/googlelogo/2x/googlelogo_light_color_92x30dp.png"
+									srcset="https://www.gstatic.com/images/branding/googlelogo/1x/googlelogo_light_color_92x30dp.png 1x,
+										https://www.gstatic.com/images/branding/googlelogo/2x/googlelogo_light_color_92x30dp.png 2x" />
+							</a>
+						</li>
+						<li>
+							<a
+								class="md-button"
+								href="http://www.google.com/intl/en/policies/privacy/"
+								target="_blank"
+							>Privacy Policy</a>
+						</li>
+						<li>
+							<a
+								class="md-button"
+								href="https://developers.google.com/open-source/gsoc/rules"
+								target="_blank"
+							>Rules</a>
+						</li>
+					</ul>
+					<ul class="no-style-list">
+						<li>
+							<a
+								class="md-button"
+								href="https://developers.google.com/open-source/gsoc/contact"
+								target="_blank"
+							>Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+		<md-sidenav class="sidenav-menu md-sidenav-right md-whiteframe-z2" md-component-id="menu">
+			<md-content>
+				<div layout layout-align="end center">
+					<md-button class="sidenav-menu__close-button" ng-click="appCtrl.toggleSideMenu()">
+						<i class="material-icons">close</i>
+					</md-button>
+				</div>
+				<form method="GET" action="/archive/search/">
+					<div layout class="md-padding">
+						<md-input-container flex>
+							<label for="sidenav__search">Search for projects, organizations or usernames</label>
+							<input
+								id="sidenav__search"
+								type="text"
+								name="q"
+								value=""
+								value-from-query-param="q"
+							/>
+						</md-input-container>
+					</div>
+					<div layout layout-align="end start">
+						<button class="md-button md-primary" type="submit">Search</button>
+					</div>
+				</form>
+				
+				<h2 class="sidenav-menu__title md-title md-padding">2019</h2>
+				<md-divider></md-divider>
+				<div class="sidenav-menu__links">
+					<ul class="no-style-list">
+						<li>
+	<a class=""
+		href="/archive/2019/organizations/"
+	>Organizations</a>
+</li>
+<li>
+	<a class="active"
+		href="/archive/2019/projects/"
+	>Projects</a>
+</li>
+
+					</ul>
+				</div>
+				
+			</md-content>
+		</md-sidenav>
+		<script src="/static/archive/js/a9612e61ea6be7d870d588edb8d3f58dcab0da7a.main.js"></script>
+
+	</body>
+</html>
